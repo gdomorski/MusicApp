@@ -1,0 +1,249 @@
+@media only screen and (max-width: 1049px) {
+	#container {
+		margin-left: auto;
+	  margin-right: auto;
+	  width: 100%
+	}
+	.footer {
+  	height: 200px;
+  	position: relative;
+	}
+	#arrow {
+		display: none;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 980px) {
+	#container {
+		float: none;
+		> div {
+		width: 45%;
+		margin-right: 5%;
+		}
+		img {
+		width: 100%;
+		}
+	}
+	.musicList {
+		width: 98%;
+		margin: 0 auto;
+		float: none;
+		right: 0;
+		position: relative;
+	}
+	.musicFormat ul {
+		width: 100%;
+		li {
+		width: 100%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 766px) {
+	#container {
+		margin-top: 1em;
+		width: 100%;
+		margin-left: auto;
+	  margin-right: auto;
+		padding: 0px;
+		float: none;
+		img {
+		float: none;
+		width: 95%;
+		}
+		> div {
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		position: relative;
+		}
+	}
+
+	.musicList {
+		position: relative;
+		background-color: black;
+		width: 95%;
+		margin: 0 auto;
+		float: none;
+		right: 0;
+	}
+	.musicFormat > div {
+		text-align: center;
+		margin-right: 30px;
+	}
+	.musicFormat ul, .musicFormat ul li {
+		width: 100%;
+	}
+
+	.magnify {
+		display: inline;
+	}
+	.mobile_header {
+		display: block;
+	}
+	.desktop_search {
+		display: none;
+	}
+	.magnify_mobile {
+		display: block;
+	}
+	#searchIconTR {
+		float: right;
+		padding-right: 1em;
+	}
+	#searchBarTR {
+		float: left;
+	}
+	.see-more{
+		display: none;
+	}
+
+	.footer {
+		height: 7em;
+		a {
+		font-size: 12px;
+		padding: 0px;
+		display: block;
+		}
+	}
+	#arrow {
+		display: block;
+	}
+}
+
+
+@media only screen and (min-width: 767px) {
+	.topWidth {
+    width: 90%;
+  }
+
+  #menu {
+    display: none;
+  }
+  nav {
+    display: block;
+    text-align: center;
+    line-height: 3.75;
+    ul {
+      border: none;
+    }
+    a {
+      border: none;
+      padding: 0;
+      margin-left: 2em;
+      text-decoration: none;
+      &:hover {
+        background: none;
+      }
+    }
+    li {
+    display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 766px) {
+	#container {
+		margin-top: 1em;
+		width: 100%;
+		margin-left: auto;
+	  margin-right: auto;
+		padding: 0px;
+		float: none;
+		img {
+		float: none;
+		width: 95%;
+		}
+		> div {
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		position: relative;
+		}
+	}
+
+	.musicList {
+		position: relative;
+		background-color: black;
+		width: 95%;
+		margin: 0 auto;
+		float: none;
+		right: 0;
+	}
+	.musicFormat > div {
+		text-align: center;
+		margin-right: 30px;
+	}
+	.musicFormat ul, .musicFormat ul li {
+		width: 100%;
+	}
+
+	.magnify {
+		display: inline;
+	}
+	.mobile_header {
+		display: block;
+	}
+	.desktop_search {
+		display: none;
+	}
+	.magnify_mobile {
+		display: block;
+	}
+	#searchIconTR {
+		float: right;
+		padding-right: 1em;
+	}
+	#searchBarTR {
+		float: left;
+	}
+	.see-more{
+		display: none;
+	}
+
+	.footer {
+		height: 7em;
+		a {
+		font-size: 12px;
+		padding: 0px;
+		display: block;
+		}
+	}
+	#arrow {
+		display: block;
+	}
+}
+
+
+@media only screen and (min-width: 767px) {
+	.topWidth {
+    width: 90%;
+  }
+
+  #menu {
+    display: none;
+  }
+  nav {
+    display: block;
+    text-align: center;
+    line-height: 3.75;
+    ul {
+      border: none;
+    }
+    a {
+      border: none;
+      padding: 0;
+      margin-left: 2em;
+      text-decoration: none;
+      &:hover {
+        background: none;
+      }
+    }
+    li {
+    display: inline-block;
+    }
+  }
+}
+
+
