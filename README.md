@@ -13,10 +13,6 @@ Music Browser is a fictional music discovery and news platform aimed at music en
 ## General
 Name: Greg Domorski
 
-Editor used: Sublime Text 3
-
-Time taken: Worked on it Monday
-
 ## Technologies
 
 - SASS
