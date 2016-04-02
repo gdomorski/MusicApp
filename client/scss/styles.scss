@@ -87,6 +87,7 @@ nav {
 
 .show {
   display: block;
+  transition: width 2s;
 }
 
 
@@ -215,11 +216,18 @@ nav {
 }
 
 .hideSearch {
-  display:none;
+  opacity: 0;
+  display: hidden;
+  max-height: 0;
+  max-width: 0;
 }
 .showSearch {
-  display: inline;
+  opacity: 1;
   border-radius: 5px;
+  transition: opacity 1s ease-out;
+  -ms-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -webkit-transition: opacity 1s ease-out;
 }
 
 #searchBar {
@@ -266,6 +274,7 @@ nav {
 
 .showMusic {
   display:block;
+  transition: width 2s;
 }
 
 

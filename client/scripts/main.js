@@ -7,10 +7,10 @@ var searchIcon = document.getElementById('searchIcon'),
         arrow = document.getElementById('arrow');
         axis = 0;
 
-menu.addEventListener('click', function() { toggleMenu(nav, 'show'); });
-searchIcon.addEventListener('click', function () { toggleSearch(searchBar, 'showSearch'); });
-searchIconTR.addEventListener('click', function () {    toggleSearch(searchBarTR, 'showSearch'); })
-arrow.addEventListener('click', function(){ toggleMusic(toggleMusic, 'see-more'); })
+menu.addEventListener('click', toggleMenu(nav, 'show'));
+searchIcon.addEventListener('click', toggleSearch(searchBar, 'showSearch'));
+searchIconTR.addEventListener('click', toggleSearch(searchBarTR, 'showSearch'))
+arrow.addEventListener('click', toggleMusic(null, 'see-more'))
 
 var toggleMenu = function (element, className) {
     if (!element || !className) return;
@@ -18,11 +18,7 @@ var toggleMenu = function (element, className) {
     var classString = element.className,
         nameIndex = classString.indexOf(className);
 
-    if (nameIndex === -1) {
-        classString = "show";
-    } else {
-        classString = "hide";
-    }
+    clasString = (nameIndex === -1) ? "show" : "hide";
     element.className = classString;
 };
 
@@ -30,12 +26,9 @@ var toggleSearch = function(element, className) {
     if (!element || !className) return;
 
     var classString = element.className,
-        nameIndex = classString.indexOf(className);
-      if (nameIndex === -1) {
-        classString = "showSearch";
-    } else {
-        classString = "hideSearch";
-    }
+        nameIndex = classString.indexOf(className)
+
+    classString = (nameIndex === -1) ? "showSearch" : "hideSearch";
     element.className = classString;
 }
 
@@ -59,11 +52,8 @@ var toggleMusic = function (element, className) {
     for(var i = 0; i < hiddenSongs.length; i++) {
         classString = hiddenSongs[i].className,
         nameIndex = classString.indexOf(className);
-      if (nameIndex === -1) {
-          classString = "see-more";
-      } else {
-          classString = "hideMusic";
-      }
+
+      clasString = (nameIndex === -1) ? "see-more" : "hideMusic";
       hiddenSongs[i].className = classString;
       i = -1;
     }
