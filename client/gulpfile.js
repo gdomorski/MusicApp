@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
+var traceur = require('gulp-traceur');
 
 //minify css
 gulp.task('sass', function () {
@@ -20,6 +21,7 @@ gulp.task('sass:watch', function() {
 //minifys js
 gulp.task('compress', function() {
   return gulp.src('scripts/*.js')
+  	.pipe(traceur())
     .pipe(uglify())
     .pipe(gulp.dest('js-min'));
 });
